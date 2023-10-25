@@ -2,7 +2,7 @@
 
 1. скачать backend с репозитория [`strapi-car-server`](https://github.com/dmitrynjg/strapi-car-server)
 2. установить все пакеты через ```npm i``` что в backend что в этом репозитории
-3. сделать build на сервере через команду ```npm run build```
+3. сделать build на backend сервере через команду ```npm run build```
 4. далее запустить backend-сервер либо через команду```npm run develop``` либо через команду ```npm run start```
 5. далее вы можете запустить next сервер
 
