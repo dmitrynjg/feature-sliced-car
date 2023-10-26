@@ -4,12 +4,13 @@ import { mapCarItem, mapCars } from '../lib';
 import { CarResponseType } from './carType';
 import { CarsHookType } from '../model';
 import { ICar } from '../model';
+import { Pagination } from '@/shared';
 
 export const carApi = createApi({
   reducerPath: 'car-api',
   baseQuery: baseQuery(),
   endpoints: (builder) => ({
-    cars: builder.query<CarsHookType, any>({
+    cars: builder.query<CarsHookType, { list: ICar[]; pagination: Pagination | {} }>({
       query: (params) => ({
         url: '/api/cars',
         params,

@@ -24,7 +24,7 @@ import { formCreateCarSchema } from '../lib/form-schema';
 import { getValues } from '../lib/getValues';
 
 export interface CreateCarFormProps {
-  submit?: (values: any) => void;
+  submit?: (values: z.infer<typeof formCreateCarSchema>) => void;
 }
 
 export const CreateCarForm: React.FC<CreateCarFormProps> = ({ submit }) => {
